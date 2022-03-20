@@ -11,10 +11,10 @@ export default function Header() {
       <HeaderAnnouncement />
       <nav className="w-full flex flex-wrap items-center justify-center bg-gray-100 shadow-lg">
         <div className="w-full lg:w-4/5">
-          <div className="flex flex-wrap items-center justify-between px-6 py-4">
+          <div className="flex flex-wrap items-center justify-between px-6 py-4 xs:px-2">
             <LeftHeader />
-            <div className="container-fluid">
-              <Link href="/">
+            <div className="container-fluid xs:flex-1 xs:flex xs:justify-center">
+              <Link href="/store">
                 <a className="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-0 mr-1">
                   <Image
                     src="/mdb-transaprent-noshadows.png"

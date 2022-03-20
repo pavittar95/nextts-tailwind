@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-export default function LeftHeader() {
+function LeftHeader() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid xs:w-24">
       <button
         data-collapse-toggle="mobile-menu"
         type="button"
@@ -65,3 +65,5 @@ export default function LeftHeader() {
     </div>
   );
 }
+
+export default React.memo(LeftHeader);

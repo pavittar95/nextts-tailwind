@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import HeaderCartIcon from "./headerCartIcon";
 
-export default function RightHeader() {
+function RightHeader() {
   return (
     <div className="container-fluid flex">
       <div className="w-full md:block md:w-auto">
@@ -22,3 +22,5 @@ export default function RightHeader() {
     </div>
   );
 }
+
+export default React.memo(RightHeader)
